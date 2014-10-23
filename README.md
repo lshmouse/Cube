@@ -12,7 +12,15 @@ golang
 - Performace tests and comparison
 
 ### version 0.2
-- A data model based on the key-value storage engine. NameSpace -> Table -> Region -> Entry
+- A data model based on the key-value storage engine.
+  - NameSpace
+  - Table
+  - Region
+  - Entry Group
+  - Row
+  - Locality Group
+  - Column
+  - Data. Data type: int32/uint32/int64/uint64/float/double/string/protobuf, ,..
 
 ### version 0.3
 - A consistent replica set using paxos (raft) consensus algorithm.
@@ -32,3 +40,7 @@ golang
 ###Low Priority
 - Security, Acl and Audit.
 - A web monitor.
+
+###References
+- Google bigtable http://research.google.com/archive/bigtable-osdi06.pdf
+- Google MegaStore http://research.google.com/pubs/archive/36971.pdf
